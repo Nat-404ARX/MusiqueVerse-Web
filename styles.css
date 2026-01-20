@@ -1,0 +1,61 @@
+/* =========================
+    Fonts
+========================= */
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("./asset/fonts/orbitron.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Pixel";
+    src: url("./asset/fonts/pixelifysans.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Robot";
+    src: url("./asset/fonts/giantrobotarmy.ttf") format("truetype");
+    font-weight: 500;
+}
+
+/* =========================
+    Variables
+========================= */
+
+:root {
+    --bg-main: #ffffff;
+    --bg-alt: #545454;
+    --bg-alt2: #787878;
+    --bg-alt3: #b4b4b4;
+
+    --text-light: #545454;
+    --text-dark: #ffffff;
+
+    --primary: #19b4ff;
+    --secondary: #8fdaff;
+    --thirdary: #006989;
+
+    --font-main: "Orbitron", sans-serif;
+    --font-pixel: "Pixel", sans-serif;
+    --font-titre: "Robot", sans-serif;
+
+}
+
+/* =========================
+    Layout global
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 60px 20px;
+    align-items: center;
+    background: var(--bg-main);
+    color: var(--text-light);
+    font-family: var(--font-main);
+}
+
