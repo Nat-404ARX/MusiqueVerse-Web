@@ -52,10 +52,29 @@
 }
 
 body {
-    padding: 60px 20px;
     align-items: center;
     background: var(--bg-main);
     color: var(--text-light);
     font-family: var(--font-main);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("./asset/images/b-principal.png");
+    background-size: 100%;
+    padding: 7%;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.4em;
+}
+
+main {
+    padding: 5% 2%;
 }
 
