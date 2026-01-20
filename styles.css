@@ -70,6 +70,7 @@ header {
     background-size: 100%;
     padding: 7%;
     width: 100%;
+    background-repeat: no-repeat;
 }
 
 #header-lecteur {
@@ -81,10 +82,12 @@ h1 {
 }
 
 h4 {
-    font: 1.1em;
+    font: 1.6em;
     color: var(--primary);
     padding: 5% 12%;
     text-align: center;
+    width: 190px;
+    font-family: var(--font-titre);
 }
 
 main {
@@ -92,6 +95,7 @@ main {
     display: flex;
     flex-direction: column;
     gap : 8%;
+    text-align: center;
 }
 
 #recherche {
@@ -181,6 +185,12 @@ h2 {
     align-items: center;
 }
 
+#card-main {
+    width: 190px;
+    height: 190px;
+
+}
+
 
 .titre-album {
     color: var(--primary);
@@ -200,12 +210,217 @@ h2 {
     opacity: 45%;
 }
 
+.controle {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.controle-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+.button-controle {
+    width: 48px;
+    height: 48px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+}
+
+#play {
+    background-image: url("./asset/images/buttons/lecture.svg");  
+}
+
+#play:hover {
+    background-image: url("./asset/images/buttons/lecture-active.svg");
+}
+
+#precedant {
+    background-image: url("./asset/images/buttons/precedent.svg");  
+}
+
+#precedant:hover {
+    background-image: url("./asset/images/buttons/precedent-active.svg");  
+}
 
 
+#ralentir {
+    background-image: url("./asset/images/buttons/ralentir.svg");  
+}
+
+#ralentir:hover {
+    background-image: url("./asset/images/buttons/ralentir-active.svg");  
+}
+            
+#accelerer {
+    background-image: url("./asset/images/buttons/accélérer.svg");  
+}
+
+#accelerer:hover {
+    background-image: url("./asset/images/buttons/accélérer-active.svg");  
+}
+
+#suivant {
+    background-image: url("./asset/images/buttons/suivant.svg");  
+}
+
+#suivant:hover {
+    background-image: url("./asset/images/buttons/suivant-active.svg");  
+}
+
+#aleatoire {
+    background-image: url("./asset/images/buttons/aleatoire.svg");  
+}
+
+#aleatoire:hover {
+    background-image: url("./asset/images/buttons/aleatoire-active.svg");  
+}
+
+#boucle {
+    background-image: url("./asset/images/buttons/boucle.svg");  
+}
+
+#boucle:hover {
+    background-image: url("./asset/images/buttons/boucle-active.svg");  
+}
+
+#telecharger {
+    background-image: url("./asset/images/buttons/telecharger.svg");  
+}
+
+#telecharger:hover {
+    background-image: url("./asset/images/buttons/telecharger-active.svg");  
+}
+
+#faible {
+    background-image: url("./asset/images/buttons/son_down.svg");  
+}
+
+#faible:hover {
+    background-image: url("./asset/images/buttons/son_down-active.svg");  
+}
+
+#mute {
+    background-image: url("./asset/images/buttons/son_muet.svg");  
+}
+
+#mute:hover {
+    background-image: url("./asset/images/buttons/son_muet-active.svg");  
+}
+
+#fort {
+    background-image: url("./asset/images/buttons/son_up.svg");  
+}
+
+#fort:hover {
+    background-image: url("./asset/images/buttons/son_up-active.svg");  
+}
+
+.player-bar {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    max-width: 360px;
+
+    color: var(--bg-main);
+    font-size: 0.8rem;
+}
+
+/* Barre */
+.progress-container {
+    position: relative;
+    flex: 1;
+    height: 6px;
+
+    background-color: var(--bg-alt);
+    border-radius: 999px;
+
+    cursor: pointer;
+}
+
+/* Partie remplie */
+.progress-fill {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 999px;
+}
+
+/* Puce */
+.progress-thumb {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+
+    width: 14px;
+    height: 14px;
+
+    background-color: white;
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+
+    transition: left 0.15s ease;
+
+    touch-action: none;
+    cursor: grab;
+}
+
+.progress-thumb:active {
+    cursor: grabbing;
+}
 
 
+/* Petit bonus interaction */
+.progress-container:active .progress-thumb {
+    transform: translate(-50%, -50%) scale(1.2);
+}
 
+.album-titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+#avant {
+    background-image: url("./asset/images/buttons/fleche_G.svg");  
+}
+
+#avant:hover {
+    background-image: url("./asset/images/buttons/fleche_G-active.svg");  
+}
+
+#apres {
+    background-image: url("./asset/images/buttons/fleche_D.svg");  
+}
+
+#apres:hover {
+    background-image: url("./asset/images/buttons/fleche_D-active.svg");  
+}
+
+#album-nom {
+    font-size: 1.65em;
+}
+
+#auteur-titre {
+    font-size: 1.4em;
+}
 
 /* 
 
