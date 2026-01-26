@@ -154,6 +154,9 @@ h2 {
     flex-direction: column;
 
     background-color: var(--bg-alt2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
     border-radius: 7px;
 }
 
@@ -441,4 +444,48 @@ background:
 
 #card-1 {
     background-image: url(./asset/images/playlist/images1.jpeg);
+}
+
+#card-2 {
+    background-image: url(./asset/images/playlist/images2.jpg);
+}
+
+#card-3 {
+    background-image: url(./asset/images/playlist/images3.jpeg);
+}
+
+#card-4 {
+    background-image: url(./asset/images/playlist/images4.jpeg);
+}
+
+#card-5 {
+    background-image: url(./asset/images/playlist/images5.jpeg);
+}
+
+#card-6 {
+    background-image: url(./asset/images/playlist/images6.jpeg);
+}
+
+#card-7 {
+    background-image: url(./asset/images/playlist/images7.jpeg);
+}
+
+#card-8 {
+    background-image: url(./asset/images/playlist/images8.jpeg);
+}
+
+#card-9 {
+    background-image: url(./asset/images/playlist/images9.jpeg);
+}
+
+#card-10 {
+    background-image: url(./asset/images/playlist/images10.jpeg);
+}
+
+#card-11 {
+    background-image: url(./asset/images/playlist/images11.jpeg);
+}
+
+#card-12 {
+    background-image: url(./asset/images/playlist/images12.jpeg);
 }
