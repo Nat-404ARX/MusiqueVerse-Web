@@ -98,6 +98,12 @@ main {
     text-align: center;
 }
 
+a {
+    color: var(--secondary);
+    font-size: 0.6em;
+    text-decoration: none;
+}
+
 #recherche {
     display: flex;
     flex-direction: row;
@@ -122,6 +128,7 @@ input:active {
 
 #filtre {
     display: flex;
+    gap: 7%;
 }
 
 .filtre {
@@ -431,3 +438,7 @@ background:
 
 
 */
+
+#card-1 {
+    background-image: url(./asset/images/playlist/images1.jpeg);
+}
